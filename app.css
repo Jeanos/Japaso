@@ -1,0 +1,86 @@
+body{
+    margin:0px;
+}
+#app {
+    margin: 0px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#menuBox{
+    display: flex;
+    flex-direction: row;
+    background: #396d98;
+}
+#menu {
+    margin: 0px;
+    flex: 50%;
+    background-color: #1b5482;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: left 0.5s, opacity 0.5s;
+    height: 100vh;
+}
+input {
+    display: none;
+}
+#menu a {
+    display: flex;
+    flex: 1;
+    background: #174d7b;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #134069;
+
+}
+#menu a:hover {
+    background: #3985bf;
+}
+#menu a:first-child {
+    margin-top: 50px;
+}
+
+#close{
+    top: 0;
+    right: 0;
+    position: absolute;
+     color: white;
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px
+}
+#open{
+    top: 0;
+    left: 0;
+     color: white;
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+    border: #ddd 1px solid;
+}
+
+#topnav > p {
+    top: 0;
+    right: 0;
+    position: fixed;
+    flex: 50%;
+    padding-right: 10%;
+    color: white
+}
+#content{
+    margin: 10px;
+}
+#meal-search{
+    display: flex;
+    height: 40px;
+    width: 90%;
+}
+.inline-search{
+    display: flex;
+}
+#search {
+    height: 46px;
+}
