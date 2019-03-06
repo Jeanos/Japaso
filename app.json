@@ -64,7 +64,7 @@
         "product_price":8
     },
       {
-        "product_image":"<img class='imagesItems' src='imgs/steaks/steakhouses.jpeg'>",
+        "product_image":"<img class='imagesItems' src='imgs/steaks/steakhouses.jpg'>",
         "product_name":"Keg Prime Steak",
         "product_categ":"steak",
         "product_color":"Yellow",
