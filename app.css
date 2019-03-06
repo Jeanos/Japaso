@@ -4,6 +4,7 @@ body{
 #app {
     margin: 0px;
     font-family: 'Quicksand', sans-serif;
+    width: 600px;
 }
 
 #menuBox{
