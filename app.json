@@ -3,12 +3,18 @@
         "product_image":"<img class='imagesItems' src='imgs/papaBurger.jpeg'>",
         "product_name":"Papa Burger",
         "product_color":"Brown",
+<<<<<<< HEAD
         "product_id":1236,
+=======
+        "product_categ":"burger",
+        "product_id":1234,
+>>>>>>> ffbda007873700821e6967e45ca7d1917dc5a34d
         "product_price":10
     },
     {
         "product_image":"<img class='imagesItems' src='imgs/mamaBurger.jpeg'>",
         "product_name":"Mama Burger",
+        "product_categ":"burger",
         "product_color":"Pink",
         "product_id":12345,
         "product_price":11
@@ -16,6 +22,7 @@
     {
         "product_image":"<img class='imagesItems' src='imgs/cheeseBurger.png'>",
         "product_name":"Cheese Burger",
+        "product_categ":"burger",
         "product_color":"Red",
         "product_id":1245,
         "product_price":9
@@ -23,6 +30,7 @@
     {
         "product_image":"<img class='imagesItems' src='imgs/uncleBurger.jpeg'>",
         "product_name":"Uncle Burger",
+        "product_categ":"burger",
         "product_color":"Red",
         "product_id":12458,
         "product_price":12.50
@@ -30,8 +38,42 @@
     {
         "product_image":"<img class='imagesItems' src='imgs/beyondTheMeat.jpeg'>",
         "product_name":"Beyond The Meat",
+        "product_categ":"burger",
+        "product_color":"Yellow",
+        "product_id":125545,
+        "product_price":8
+    },
+    {
+        "product_image":"<img class='imagesItems' src='imgs/steaks/kegsteak.jpg'>",
+        "product_name":"Keg Medium rare",
+        "product_categ":"steak",
+        "product_color":"Yoollow",
+        "product_id":125545,
+        "product_price":8
+    },
+     {
+        "product_image":"<img class='imagesItems' src='imgs/steaks/kegsteaks.jpg'>",
+        "product_name":"Keg Dinner Speical",
+        "product_categ":"steak",
+        "product_color":"Yellow",
+        "product_id":125545,
+        "product_price":8
+    },
+     {
+        "product_image":"<img class='imagesItems' src='imgs/steaks/steakhouse.jpeg'>",
+        "product_name":"Keg Steak Speical",
+        "product_categ":"steak",
+        "product_color":"Yellow",
+        "product_id":125545,
+        "product_price":8
+    },
+      {
+        "product_image":"<img class='imagesItems' src='imgs/steaks/steakhouses.jpg'>",
+        "product_name":"Keg Prime Steak",
+        "product_categ":"steak",
         "product_color":"Yellow",
         "product_id":125545,
         "product_price":8
     }
+
 ]
