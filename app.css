@@ -4,6 +4,7 @@ body{
 #app {
     margin: 0px;
     font-family: 'Quicksand', sans-serif;
+    width: 600px;
 }
 
 #menuBox{
@@ -17,7 +18,7 @@ body{
     background-color: #1b5482;
     flex-direction: column;
     position: fixed;
-    left: 0;
+    left: -150px;
     top: 0;
     opacity: 1;
     transition: left 0.5s, opacity 0.5s;
@@ -72,6 +73,8 @@ input {
 }
 #content{
     margin: 10px;
+    display: flex;
+    flex-direction: row;
 }
 #meal-search{
     display: flex;
@@ -80,7 +83,40 @@ input {
 }
 .inline-search{
     display: flex;
+    flex-direction: column;
 }
 #search {
     height: 46px;
+}
+.imagesItems{
+    width: 250px;
+}
+items{
+    
+}
+.field{
+    display: flex;
+    flex-direction: row;
+}
+#productDiv{
+    display: flex;
+    flex-direction: column;
+}
+#productImage{
+    display: flex;
+    flex-direction: column;
+}
+#productImage img{
+   margin: 5px;
+}
+
+#boldProName{
+font-weight: 100;
+    color: #ffffff;
+    background: #4CAF50;
+    padding: 10px;
+    margin: 0;
+}
+
+   
 }

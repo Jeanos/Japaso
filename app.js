@@ -1,3 +1,18 @@
+$(document).ready(function(){
+    
+  $("#search").click(function(){
+    $.getJSON("app.json", function(result){
+      $.each(result, function(i, field){
+        $("#productImage").append(field.product_image + " " + '<span id="boldProName">'+ field.product_name+ '</span> '+ " " + field.product_price + " " + field.product_color + " " + field.product_id);
+      
+        
+      });
+        
+    });
+  });
+    
+});
+
 //states
 var package = {
     menuLeft:0,
