@@ -4,13 +4,14 @@ body{
 #app {
     margin: 0px;
     font-family: 'Quicksand', sans-serif;
-    width: 600px;
+    width: 100%;
 }
 
 #menuBox{
     display: flex;
     flex-direction: row;
     background: #396d98;
+    flex: 1;
 }
 #menu {
     margin: 0px;
@@ -92,7 +93,7 @@ input {
     width: 250px;
 }
 items{
-    
+
 }
 .field{
     display: flex;
@@ -118,5 +119,5 @@ font-weight: 100;
     margin: 0;
 }
 
-   
+
 }
