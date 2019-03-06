@@ -116,11 +116,3 @@ font-weight: 100;
     padding: 10px;
     margin: 0;
 }
-
-@media only screen and (max-width: 600px) {
-  #app {
-      margin: 0px;
-      font-family: 'Quicksand', sans-serif;
-      width: 100%;
-  }
-}
