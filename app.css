@@ -11,7 +11,7 @@ body{
     display: flex;
     flex-direction: row;
     background: #396d98;
-    flex: 1;
+    
 }
 #menu {
     margin: 0px;
