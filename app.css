@@ -11,7 +11,7 @@ body{
     display: flex;
     flex-direction: row;
     background: #396d98;
-    
+
 }
 #menu {
     margin: 0px;
@@ -92,9 +92,7 @@ input {
 .imagesItems{
     width: 250px;
 }
-items{
 
-}
 .field{
     display: flex;
     flex-direction: row;
@@ -119,5 +117,10 @@ font-weight: 100;
     margin: 0;
 }
 
-
+@media only screen and (max-width: 600px) {
+  #app {
+      margin: 0px;
+      font-family: 'Quicksand', sans-serif;
+      width: 100%;
+  }
 }
