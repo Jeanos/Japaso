@@ -1,16 +1,16 @@
 $(document).ready(function(){
-    
+
   $("#search").click(function(){
     $.getJSON("app.json", function(result){
       $.each(result, function(i, field){
-        $("#productImage").append(field.product_image + " " + '<span id="boldProName">'+ field.product_name+ '</span> '+ " " + field.product_price + " " + field.product_color + " " + field.product_id);
-      
-        
+        $("#productImage").append(field.product_image + " " +
+        '<span id="boldProName">'+ field.product_name+ '</span> '+
+        " " + field.product_price + " " + field.product_color + " " +
+        field.product_id);
       });
-        
+
     });
   });
-    
 });
 
 //states
@@ -40,9 +40,9 @@ var packageChange = {
         if (prop == "menuLeft"){
             mmenu.style.left = value + "px";
         }
-        
+
         if (prop == "menuOpacity"){
-            mmenu.style.opacity = value ;        
+            mmenu.style.opacity = value ;
         }
     }
 }
