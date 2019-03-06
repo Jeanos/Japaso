@@ -5,6 +5,7 @@
     <link href="app.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Quicksand|ZCOOL+QingKe+HuangYou" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
 
@@ -13,7 +14,6 @@
     <div id="app">
         <!-- MENU COMP -->
         <div id="menuBox">
-           
             <div id="menu">
                 <a href="#">Search Menu</a>
                 <a href="#">Look for Items</a>
@@ -30,11 +30,11 @@
         <div id="content">
             <div class="inline-search">
                 <div class="field">
-                    <label><input id="meal-search"></label>
-                    <input type="text" placeholder="Full Name">
-                </div>
-                <div class="field">
-                    <button id="search"> Search</button>
+                    <button id="search"> Display Product</button>
+                </div> <br/><br/>
+                <div id="productDiv">
+                    <div id="productImage"></div>
+                    <div id="productDesc"> </div>
                 </div>
             </div>
         </div>
