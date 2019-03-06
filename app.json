@@ -41,7 +41,7 @@
     },
     {
         "product_image":"<img class='imagesItems' src='imgs/steaks/kegsteak.jpg'>",
-        "product_name":"Medium rare",
+        "product_name":"Keg Medium rare",
         "product_categ":"steak",
         "product_color":"Yoollow",
         "product_id":125545,
@@ -49,7 +49,7 @@
     },
      {
         "product_image":"<img class='imagesItems' src='imgs/steaks/kegsteaks.jpg'>",
-        "product_name":"Dinner Speical",
+        "product_name":"Keg Dinner Speical",
         "product_categ":"steak",
         "product_color":"Yellow",
         "product_id":125545,
@@ -57,7 +57,7 @@
     },
      {
         "product_image":"<img class='imagesItems' src='imgs/steaks/steakhouse.jpeg'>",
-        "product_name":"Dinner Speical",
+        "product_name":"Keg Steak Speical",
         "product_categ":"steak",
         "product_color":"Yellow",
         "product_id":125545,
@@ -65,7 +65,7 @@
     },
       {
         "product_image":"<img class='imagesItems' src='imgs/steaks/steakhouses.jpeg'>",
-        "product_name":"Dinner Speical",
+        "product_name":"Keg Prime Steak",
         "product_categ":"steak",
         "product_color":"Yellow",
         "product_id":125545,
