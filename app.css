@@ -1,22 +1,22 @@
 body{
     margin:0px;
 }
+
 #app {
     margin: 0px;
     font-family: 'Quicksand', sans-serif;
-    width: 100%;
 }
 
 #menuBox{
     display: flex;
     flex-direction: row;
-    background: #396d98;
-
+        height: 50px;
+    background: #983939;
 }
 #menu {
     margin: 0px;
     flex: 50%;
-    background-color: #1b5482;
+    background-color: #311010;
     flex-direction: column;
     position: fixed;
     left: -150px;
@@ -25,21 +25,25 @@ body{
     transition: left 0.5s, opacity 0.5s;
     height: 100vh;
 }
-input {
-    display: none;
+#searchBar{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #menu a {
     display: flex;
     flex: 1;
-    background: #174d7b;
+    background: #311010;
     padding: 10px;
     color: white;
     text-decoration: none;
-    border-bottom: 1px solid #134069;
+    border-bottom: 1px solid #652727;
 
 }
 #menu a:hover {
-    background: #3985bf;
+    background: #652727;
 }
 #menu a:first-child {
     margin-top: 50px;
@@ -50,32 +54,31 @@ input {
     right: 0;
     position: absolute;
      color: white;
-    font-size: 20px;
+    font-size: 30px;
     padding: 5px;
     margin: 5px
 }
 #open{
     top: 0;
     left: 0;
-     color: white;
-    font-size: 20px;
+    color: white;
+    font-size: 30px;
     padding: 5px;
     margin: 5px;
-    border: #ddd 1px solid;
+    border: #b97474 1px solid;
 }
 
 #topnav > p {
     top: 0;
     right: 0;
-    position: absolute;
+    position: fixed;
     flex: 50%;
-    padding-right: 10%;
-    color: white
+    padding-right: 2%;
+    color: white;
 }
 #content{
-    margin: 10px;
-    display: flex;
-    flex-direction: row;
+    margin: 20px;
+
 }
 #meal-search{
     display: flex;
@@ -86,13 +89,13 @@ input {
     display: flex;
     flex-direction: column;
 }
-#search {
-    height: 46px;
-}
+
 .imagesItems{
     width: 250px;
 }
-
+items{
+    
+}
 .field{
     display: flex;
     flex-direction: row;
@@ -110,9 +113,29 @@ input {
 }
 
 #boldProName{
-font-weight: 100;
+    font-weight: 100;
     color: #ffffff;
     background: #4CAF50;
     padding: 10px;
     margin: 0;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
