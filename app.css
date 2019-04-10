@@ -2,6 +2,17 @@ body{
     margin:0px;
 }
 
+h1{
+    color: #a72021;
+    font-size: 20pt;
+}
+h2{
+    color: #efa254;
+}
+.FeaturedDesc{
+    color: #efa254;
+    font-weight: 600;
+}
 #app {
     margin: 0px;
     font-family: 'Quicksand', sans-serif;
@@ -140,12 +151,11 @@ input[type=submit] {
   border: none;
   border-radius: 0px;
   font-size: 16px;
-  -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-
 }
 
+button {
+    -webkit-appearance: none;
+}
 
 #divFeaturedImages{
     width: 100%;
