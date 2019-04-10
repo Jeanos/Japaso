@@ -140,11 +140,10 @@ input[type=submit] {
   border: none;
   border-radius: 0px;
   font-size: 16px;
+  -webkit-appearance: none;
+
 }
 
-button {
-    -webkit-appearance: none;
-}
 
 #divFeaturedImages{
     width: 100%;
