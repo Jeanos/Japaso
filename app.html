@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,6 +7,10 @@
    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Quicksand|ZCOOL+QingKe+HuangYou" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
 </head>
 <body>
     <div id="app">
@@ -27,27 +30,17 @@
         </div>
 
         <div id="content">
-            <div id="searchBar">
-                <form>
-                    <input type="text" id="location" name="firstname" placeholder="Where ...">
-                    <input type="text" id="price" name="firstname" placeholder="Price ...">
-                    <input type="text" id="rate" name="firstname" placeholder="Rate...">
-                    <input type="submit" value="Search">
-                </form>
-            </div>
-            
-            <div>
-                <h1>Buffalo Chicken Club</h1>
-                <p>Our spicy, seasoned, crispy chicken breast, drizzled in Franks RedHotTM sauce, topped with naturally smoked bacon, aged Canadian cheddar, crisp iceberg lettuce, fresh vine-ripened tomatoes, and creamy ranch dressing. </p>
-                
-                <h2>Featured Burgers</h2>
-                <div id="divFeaturedImages">
-                    <div ><img src="imgs/placeholder.png" alt="Bacon Cheddar" class="featuredImageBox"><div class="FeaturedDesc">Bacon Chedar Burger</div></div>
-                    <div><img src="imgs/placeholder.png" alt="Bacon Cheddar" class="featuredImageBox"><div class="FeaturedDesc">Bacon Chedar Burger</div></div>
-                    <div ><img src="imgs/placeholder.png" alt="Bacon Cheddar" class="featuredImageBox"><div class="FeaturedDesc">Bacon Chedar Burger</div></div>
+          <button id="search"> Display Product</button>
+            <div class="inline-search">
+
+                <div class="field">
+
+                </div> <br/><br/>
+                <div id="productDiv">
+                    <div id="productImage"></div>
+                    <div id="productDesc"> </div>
                 </div>
             </div>
-                
         </div>
     </div>
 <script src="app.js"></script>
