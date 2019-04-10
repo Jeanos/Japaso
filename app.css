@@ -71,7 +71,7 @@ body{
 #topnav > p {
     top: 0;
     right: 0;
-    position: fixed;
+    position: absolute;
     flex: 50%;
     padding-right: 2%;
     color: white;
