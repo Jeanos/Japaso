@@ -145,3 +145,16 @@ input[type=submit] {
 #input[type=submit], input[type=text], select {
     -webkit-appearance: none;
 }
+
+#divFeaturedImages{
+    width: 100%;
+    display: inline-flex;
+    margin: 5px;
+}
+
+.featuredImageBox{
+    display: flex;
+    width: 80%;
+    margin: 10px;
+   
+}
