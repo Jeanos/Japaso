@@ -1,8 +1,9 @@
 
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JAPASO</title>
+    <title>Order</title>
     <link href="app.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Quicksand|ZCOOL+QingKe+HuangYou" rel="stylesheet">
@@ -31,32 +32,39 @@
         </div>
 
         <div id="content">
-            <div id="searchBar">
-                <form>
-                    <input type="text" id="location" name="firstname" placeholder="Where ...">
-                    <input type="text" id="price" name="firstname" placeholder="Price ...">
-                    <input type="text" id="rate" name="firstname" placeholder="Rate...">
-                    <input type="submit" value="Search">
-                </form>
-            </div>
+           
             
             <div>
                 <div class="itemFound">
                     <h1>Buffalo Chicken Club - Triple O's</h1>
                     <h3>Burnaby, V5C 3C7</h3>
                     <p>Our spicy, seasoned, crispy chicken breast, drizzled in Franks RedHotTM sauce, topped with naturally smoked bacon, aged Canadian cheddar, crisp iceberg lettuce, fresh vine-ripened tomatoes, and creamy ranch dressing. </p>
+                    
+                    <button>Location</button>
+                    <button>Order</button>
                 </div>
                 
-                <h2>Featured Burgers</h2>
-                <div id="divFeaturedImages">
-                    <div ><img src="imgs/triplOs.jpg" alt="Bacon Cheddar" class="featuredImageBox"><div class="FeaturedDesc">Bacon Chedar Burger</div></div>
-                    <div><img src="imgs/triplOs.jpg" alt="Bacon Cheddar" class="featuredImageBox"><div class="FeaturedDesc">Ranch Burger</div></div>
-                    <div ><img src="imgs/triplOs.jpg" alt="Bacon Cheddar" class="featuredImageBox"><div class="FeaturedDesc">Cheese Burger</div></div>
+                <h2>Comments</h2>
+                <div id="Comments">
+            Bacon Chedar Burger</div>
+                   
+                    <div ><img src="imgs/placeholder.png" alt="Bacon Cheddar" class="featuredImageBox" id="commentImg"><div class="FeaturedDesc">Peter Chu <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span><p id="commentText">
+                        I tried this burger and it is the best in town right now. I encourage people to buy this. Well served by Triple O's</p></div></div>
+                
+                <div ><img src="imgs/placeholder.png" alt="Bacon Cheddar" class="featuredImageBox" id="commentImg"><div class="FeaturedDesc">John Meyer <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span><p id="commentText">
+                       I found easily the location and I order on skip the dishes. So cool</p></div></div>
                 </div>
             </div>
                 
         </div>
-    </div>
 <script src="app.js"></script>
 </body>
 </html>

@@ -13,6 +13,7 @@ h2{
 .FeaturedDesc{
     color: #efa254;
     font-weight: 600;
+    text-align: center;
 }
 #app {
     margin: 0px;
@@ -149,7 +150,7 @@ input[type=text], select {
   font-size: 16px;
     
 }
-input[type=submit] {
+button,input[type=submit] {
   width: 100%;
   background-color: #4CAF50;
   color: white;
@@ -178,4 +179,17 @@ button {
     width: 80%;
     margin: 10px;
    
+}
+
+#commentImg{
+    width: 10%;
+    text-align: center;
+}
+
+#commentText{
+    color: black
+}
+
+.checked {
+  color: orange;
 }
