@@ -38,7 +38,7 @@ h2{
     background-color: #311010;
     flex-direction: column;
     position: fixed;
-    left: -150px;
+    left: -215px;
     top: 0;
     opacity: 1;
     transition: left 0.5s, opacity 0.5s;
