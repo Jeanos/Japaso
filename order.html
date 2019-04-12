@@ -3,7 +3,8 @@
 
 <head>
     <title>JAPASO</title>
-    <link href="app.css" rel="stylesheet" />
+<!--    <link href="app.css" rel="stylesheet" />-->
+    <link href="p-app.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans|Quicksand|ZCOOL+QingKe+HuangYou" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -22,7 +23,6 @@
                 <a href="#">Search Menu</a>
                 <a href="#">Look for Items</a>
                 <a href="#">Log Out</a>
-                <input onkeyup="changeOp()" id="opacityInput">
                 <i class="fas fa-window-close" onclick="closeMenu()" id="close"></i>
             </div>
             <i class="fas fa-bars" onclick="openMenu()" id="open"></i>
@@ -31,10 +31,10 @@
             </div>
         </div>
 
-        <div class="bannerImg">
-            <img alt="triple O's" src="imgs/banners/banner_menu.jpg" />
+        <div class="productImg1">
+            <img alt="triple O's" src="imgs/triplOs.jpg" />
         </div>
-
+        <h1 id="heading">Triple O's Restaurant <br /> Well Served By:</h1>
 
         <div class="searchDiv">
             <div class="search">
@@ -43,41 +43,29 @@
                     <i class="fa fa-search"></i>
                 </button>
             </div>
-            
         </div>
-            <br />
-            <br />
-            <br />
-            <br />
         <div id="content">
 
 
             <div class="flex-container">
-                <div class="flex-item"><img class="products" src="imgs/icons/burger_icon.png">
-                    <h1>Burgers</h1>
+                <div class="flex-item"><img class="company" src="imgs/skipthedishlogo.jpg">
+
                 </div>
 
-                <div class="flex-item"><img class="products" src="imgs/icons/Steak_icon.png">
-                    <h1>Steaks</h1>
-                </div>
+                <div class="flex-item"><img class="company" src="imgs/foodora.jpg">
 
-                <div class="flex-item"><img class="products" src="imgs/icons/pasta_icon.png">
-                    <h1>Pasta</h1>
                 </div>
 
 
 
             </div>
             <div class="flex-container">
-                <div class="flex-item"><img class="products" src="imgs/icons/pizza_icon.png">
-                    <h1>Pizza</h1>
+                <div class="flex-item"><img class="company" src="imgs/grubhub.jpg">
+
                 </div>
 
-                <div class="flex-item"><img class="products" src="imgs/icons/sushi_icon.png">
-                    <h1>Sushi</h1>
-                </div>
-                <div class="flex-item"><img class="products" src="imgs/icons/chicken_icon.png">
-                    <h1>Chicken</h1>
+                <div class="flex-item"><img class="company" src="imgs/door_dash.jpg">
+
                 </div>
 
                 <!---  <div class="flex-item">8</div> --->

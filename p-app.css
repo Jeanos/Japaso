@@ -1,0 +1,253 @@
+body {
+    margin: 0px;
+}
+
+#app {
+    margin: 0px;
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+}
+
+
+#content {
+    /*margin: 10px;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#meal-search {
+    display: flex;
+    height: 40px;
+    width: 90%;
+}
+
+
+.imagesItems {
+    width: 250px;
+}
+
+.field {
+    display: flex;
+    flex-direction: row;
+}
+
+#productDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+#productImage {
+    display: flex;
+    flex-direction: column;
+}
+
+#productImage img {
+    margin: 5px;
+}
+
+#boldProName {
+    font-weight: 100;
+    color: #ffffff;
+    background: #4CAF50;
+    padding: 10px;
+    margin: 0;
+}
+
+/*Products Icon*/
+
+.products {
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.company {
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.productImg1 {
+
+    display: flex;
+    justify-content: center;
+    /* align horizontal */
+    align-items: center;
+    /* align vertical */
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 300px;
+    /*
+    margin-top: 70px;
+    margin-bottom: 30px;
+    */
+
+}
+
+.productImg {
+    background-image: url(imgs/banners/banner_menu.jpg);
+    display: flex;
+    justify-content: center;
+    /* align horizontal */
+    align-items: center;
+    /* align vertical */
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    /*
+     margin-top: 70px;
+    margin-bottom: 30px;
+*/
+    width: 300px;
+    height: 400px;
+}
+
+.searchDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+
+}
+
+
+/*main layout*/
+
+.searchTerm {
+    float: left;
+    width: 100%;
+    border: 3px solid #A81F23;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.flex-banner {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    height: 300px;
+    width: 100%;
+    line-height: 30px;
+}
+
+.flex-slider {
+    /*background: tomato;*/
+    background-repeat: no-repeat;
+    background-image: url(imgs/banners/banner_menu.jpg);
+    margin: 5px;
+    /*color: white;*/
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    flex: 1 0 0px;
+    height: auto;
+}
+
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    margin-top: 120px;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    height: 600px;
+    width: 350px;
+    line-height: 30px;
+}
+
+.flex-item {
+    /*background: tomato;*/
+    margin: 5px;
+    /*color: white;*/
+    align-items: center;
+    text-align: center;
+    flex: 1 0 0px;
+    height: auto;
+}
+
+
+h1,
+#heading {
+
+    text-align: center;
+    font-size: 22px;
+}
+
+/*form*/
+
+.search {
+    width: 40%;
+    position: relative;
+
+}
+
+.searchTerm {
+
+    float: left;
+    width: 100%;
+    border: 3px solid #A81F23;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchTerm:focus {
+    color: #00B4CC;
+}
+
+.searchButton {
+    position: absolute;
+    right: -50px;
+    width: 40px;
+    height: 36px;
+    border: 1px solid #A81F23;
+    background: #A81F23;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+/*
+.wrap {
+    display: flex;
+    margin-top: 30px;
+    width: 50%;
+    position: absolute;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, -50%);
+
+}
+*/
