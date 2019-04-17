@@ -43,6 +43,7 @@ h2{
     opacity: 1;
     transition: left 0.5s, opacity 0.5s;
     height: 100vh;
+    z-index: 2;
 }
 #searchBar{
     margin-left: auto;
@@ -95,10 +96,11 @@ h2{
     padding-right: 2%;
     color: white;
 }
+
 #content{
     margin: 20px;
-
 }
+
 #meal-search{
     display: flex;
     height: 40px;
@@ -224,4 +226,145 @@ button.searchButton {
 
 hr {
     border-top: dotted 2px;
+}
+
+/* Search */
+.search-content {
+    margin: 20px;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.col-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
+.mt-4,
+.my-4 {
+    margin-top: 1.5rem !important;
+}
+
+.col-4,
+.col-8 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.d-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+.align-items-center {
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.restaurant-container {
+    margin: 20px 0;
+    border-color: lightgray;
+}
+
+.restaurant-container .restaurant-img {
+    background-image: url("./imgs/burger.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+}
+
+.restaurant-container h3{
+    color: #efa254;
+}
+
+.search-panel {
+    margin: 0 40px;
+}
+
+.search-panel > .search-controls {
+    display: flex;
+}
+
+.search-controls > .dropdownloc{
+    width: 150px;
+    border-color: #983939;
+}
+
+.search-controls > .dropdownpri{
+    margin-left: 20px;
+    width: 80px;
+    border-color: #983939;
+}
+
+.search-panel > .searchbut{
+    padding: 10px;
+    height: 40px;
+    background-color: #000;
+    width: 100px;
+    text-align: center;
+    align-content: center;
+    border-radius: 20px;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .cover-img>.cover-name {
+        font-size: 4em;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .cover-img>.cover-name {
+        font-size: 5em;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .cover-img>.cover-name {
+        font-size: 6em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    .cover-img>.cover-name {
+        font-size: 7em;
+    }
 }
