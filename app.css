@@ -13,7 +13,7 @@ h2{
 .FeaturedDesc{
     color: #efa254;
     font-weight: 600;
-    text-align: center;
+    text-align: left;
 }
 #app {
     margin: 0px;
@@ -178,18 +178,50 @@ button {
     display: flex;
     width: 80%;
     margin: 10px;
+    flex: 2;
    
 }
 
 #commentImg{
-    width: 10%;
+    width: 80%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
 
 #commentText{
-    color: black
+    color: black;
+    text-align: left;
+    flex: 3;
 }
 
 .checked {
   color: orange;
+}
+.bannerImg{
+    width: 100%;
+}
+
+button.searchButton {
+    padding: 10px;
+    height: 40px;
+}
+.displayReviews{
+    display: flex;
+    flex-direction: row;
+}
+
+.FeaturedBurgers{
+    color: #d84e00;
+    font-weight: 600;
+    text-align: center;
+}
+
+.red{
+    background: #a20d0d !important;
+}
+
+hr {
+    border-top: dotted 2px;
 }

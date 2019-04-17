@@ -58,9 +58,10 @@ body {
 /*Products Icon*/
 
 .products {
-    width: 200px;
-    height: 200px;
-    padding: 5px;
+    width: 175px;
+    height: 175px;
+    border: 2px solid #bdbdbd;
+    padding: 20px;
     justify-content: center;
     align-items: center;
 
@@ -129,7 +130,7 @@ body {
     width: 100%;
     border: 3px solid #A81F23;
     padding: 5px;
-    height: 20px;
+    height: 40px !important;
     border-radius: 5px;
     outline: none;
     color: #9DBFAF;
