@@ -6,11 +6,8 @@
     <link href="app.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Quicksand|ZCOOL+QingKe+HuangYou" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="food.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-
 
 </head>
 <body>
@@ -25,30 +22,53 @@
             </div>
             <i class="fas fa-bars" onclick="openMenu()" id="open"></i>
             <div id="topnav">
-                 <p>Selection: Chicken Club</p>
+                 <p id="label">Selection: Chicken Club</p>
             </div>
         </div>
 
         <div id="content">
             <div id="searchBar">
-                <form action="selection.html">
-                    <input type="text" id="location"  placeholder="Where ...">
-                    <input type="text" id="price" name="firstname" placeholder="Price ...">
-                    <input type="text" id="rate" name="firstname" placeholder="Rate...">
-                    <a href="selection.html"><button type="submit" value="Search"> Search</button></a>
-                </form>
+                    <select id="location" onchange="selectLocation()">
+                      <option value="" disabled selected ><span id="placeholder"> Select location </span></option>
+                      <option value="Vancouver">Vancouver</option>
+                      <option value="Burnaby">Burnaby</option>
+                      <option value="Surrey">Surrey</option>
+                    </select>                    
+                    <select id="price" onchange="selectPrice()">
+                      <option value="" disabled selected ><span id="placeholder"> Select Price - Range </span></option>
+                      <option value="5To10">$5 - $10</option>
+                      <option value="11To20">$11 - $20</option>
+                      <option value="21To30">$21 - $30</option>
+                    </select>
+                    <select onchange="selectRate()" id="rate">
+                      <option value="" disabled selected ><span id="placeholder"> Select review Rate </span></option>
+                      <option value="less2Stars"> Less than 2 stars</option>
+                      <option value="3To4Stars">3 to 4 stars</option>
+                      <option value="5stars">5 stars</option>
+                    </select>
+                    <button type="submit" value="Search" onclick="filteredItems()"> 
+                        
+                        Search
+                    
+                    </button>
+                
             </div>
             
             <div>
-                <div class="itemFound">
-                    <h1>Buffalo Chicken Club - Triple O's</h1>
-                    <h3>Burnaby, V5C 3C7</h3>
-                    <p>Our spicy, seasoned, crispy chicken breast, drizzled in Franks RedHotTM sauce, topped with naturally smoked bacon, aged Canadian cheddar, crisp iceberg lettuce, fresh vine-ripened tomatoes, and creamy ranch dressing. </p>
+                  <div class="itemFound">
+                    <h1>Search Values</h1>
+                    <p id="locationDisplay">Location is not selected yet</p>
+                    <p id="priceDisplay">price is not selected yet</p>
+                    <p id="rateDisplay">review is not selected yet</p>
+                      
+                      <div id="wrapper">
+    
+                      </div>
                 </div>
                 
                 <h2>Featured Burgers</h2>
                 <div id="divFeaturedImages">
-                    <div ><img src="imgs/triplOs.jpg" alt="Bacon Cheddar" class="featuredImageBox"><div class="FeaturedBurgers">Bacon Chedar Burger</div></div>
+                    <div ><img src="imgs/triplOs.jpg" alt="Bacon Cheddar" class="featuredImageBox" ><div class="FeaturedBurgers">Bacon Chedar Burger</div></div>
                     <div><img src="imgs/triplOs.jpg" alt="Bacon Cheddar" class="featuredImageBox"><div class="FeaturedBurgers">Ranch Burger</div></div>
                     <div ><img src="imgs/triplOs.jpg" alt="Bacon Cheddar" class="featuredImageBox"><div class="FeaturedBurgers">Cheese Burger</div></div>
                 </div>
@@ -56,6 +76,13 @@
                 
         </div>
     </div>
+    <div class="footer">
+        <i class="fas fa-arrow-circle-left fa-2x navIcons"></i>
+        <i class="fas fa-home fa-2x navIcons"></i>
+    </div>
+    <script src="filtering.js"></script>
+
 <script src="app.js"></script>
+<script src="filtering.js"></script>
 </body>
 </html>
