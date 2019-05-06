@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JAPASO</title>
+    <link href="app.css" rel="stylesheet" />
+    <link href="p-app.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Quicksand|ZCOOL+QingKe+HuangYou" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div id="app">
+        <!-- MENU COMP -->
+        <div id="menuBox">
+            <div id="menu">
+                <a href="#">Search Menu</a>
+                <a href="#">Look for Items</a>
+                <a href="#">Log Out</a>
+                <i class="fas fa-window-close" onclick="closeMenu()" id="close"></i>
+            </div>
+            <i class="fas fa-bars" onclick="openMenu()" id="open"></i>
+            <div id="topnav">
+                <p>Japaso</p>
+            </div>
+        </div>
+
+        <div class="bannerImg">
+            <img alt="triple O's" class="bannerImg" src="imgs/banners/banner_menu.jpg" />
+        </div>
+
+        <div class="searchDiv">
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                <a href="restaurant.html"> <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                    </button></a>
+            </div>
+        </div>
+            <br />
+            <br />
+            <br />
+            <br />
+        <div id="content">
+            <div class="flex-container">
+                <div class="flex-item">
+                    <a href="restaurant.html?category=burgers">
+                        <img class="products" src="imgs/icons/burger_icon.png">
+                    </a>
+                    <h1>Burgers</h1>
+                </div>
+                <div class="flex-item">
+                     <a href="restaurant.html?category=steak">
+                        <img class="products" src="imgs/icons/Steak_icon.png">
+                    </a>
+                    <h1>Steaks</h1>
+                </div>
+                <div class="flex-item">
+                        <a href="restaurant.html?category=pasta">
+                         <img class="products" src="imgs/icons/pasta_icon.png">                    
+                        </a>
+                    <h1>Pasta</h1>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <a href="restaurant.html?category=pizza">
+                        <img class="products" src="imgs/icons/pizza_icon.png">                    
+                    </a>
+                    <h1>Pizza</h1>
+                </div>
+                <div class="flex-item">
+                    <a href="restaurant.html?category=sushi">
+                        <img class="products" src="imgs/icons/sushi_icon.png">                    
+                    </a>
+                    <h1>Sushi</h1>
+                </div>
+                <div class="flex-item">
+                    <a href="restaurant.html?category=chicken">
+                        <img class="products" src="imgs/icons/chicken_icon.png">                   
+                    </a>
+                    <h1>Chicken</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

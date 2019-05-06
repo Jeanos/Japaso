@@ -368,3 +368,26 @@ hr {
         font-size: 7em;
     }
 }
+
+/* 
+ * Restaurant page
+ */
+ .bannerImg-restaurant{
+    width: 100%;
+    width: 100%;
+    background-image: url(./imgs/restaurant.png);
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+}
+
+.restaurant-view {
+    display: flex;
+    flex-direction: row;
+}
+
+.restaurant-view h3 {
+    color: #efa254;
+    font-weight: 600;
+    text-align: left;
+}
