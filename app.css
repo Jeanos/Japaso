@@ -444,7 +444,8 @@ hr {
     z-index: 1;
     width: 150px;
     height: 150px;
-    margin: 0px 0 0 0px;
+    margin-left: -50px;
+    margin-right: auto;
     border: 8px solid #f3f3f3;
     border-radius: 50%;
     border-top: 8px solid #a23035;
