@@ -22,7 +22,7 @@ var handler = {
     set: function (obj, props, value) {
         //when pkg is changed, call func
         if (props === "catChoice") {
-           //
+           showLabelChoice();
         }
         if (props === "itemLocation") {
             displaySearchLocation(value);
@@ -53,15 +53,21 @@ function selectCategory(val){
 
 function setCategory(){
     pkg.catChoice = localStorage.getItem("Category");
+    
 }
 
 function filteredItems(){
     var filtered = food[pkg.catChoice].filter(function(obj,i){
         return(
-            (obj.price > pkg.minPrice) && (obj.price < pkg.maxPrice) && (obj.restaurants[0].locations[0].City.indexOf(pkg.itemLocation) != -1)
+
+            ((obj.price >= pkg.minPrice) && (obj.price <= pkg.maxPrice)) && ((obj.restaurants[0].locations[0].City.indexOf(pkg.itemLocation) != -1)||(obj.restaurants[0].locations[1].City.indexOf(pkg.itemLocation) != -1)||(obj.restaurants[0].locations[2].City.indexOf(pkg.itemLocation) != -1))
         );
     });
     pkg.itemFiltered = filtered;
+    
+    if (pkg.itemFiltered = "") {
+        proxPkg.itemFiltered = "Item not found..";
+    }
     proxPkg.itemFiltered = filtered;
 }
 // FUNCTION THAT CHANGE STATE ON THE PACKAGE
@@ -131,23 +137,47 @@ function displaySearchLocation(val){
 }
 
 function displaySearchRate(val){
-    document.querySelector("#rateDispleay").innerHTML = val;     
+    document.querySelector("#rateDisplay").innerHTML = val;     
 }
 
 function displayResearchFinalUI(value){
- 
-    var itemFound = document.querySelector(".itemFound");
-    itemFound.innerHTML = "";
-    for(var i=0; i < value.length; i++)
-    itemFound.innerHTML += "<p>"+value[i].name+ ' '+ '$' + " "+value[i].price + " "+value[i].restaurants[0].locations[0].City + "</p><br>";
+    
+    var itemFound = document.querySelector(".itemsFound");
+    itemFound.innerText = "";
+    document.querySelector("#locationDisplay").style.display = "none";
+    document.querySelector("#priceDisplay").style.display = "none";
+    document.querySelector("#rateDisplay").style.display = "none";
+    document.querySelector("#loader").style.display = "block";
+    
+    for(var i=0; i < value.length; i++){
+        
+//        itemFound.innerHTML += "<p>"+value[i].name+ ' '+ '$' + " "+value[i].price + " \
+//        "+value[i].restaurants[0].locations[0].City + " <br/> \
+//        "+value[i].restaurants[0].locations[1].City + " <br/> \
+//        "+value[i].restaurants[0].locations[2].City + "</p><br>";
+        
+        itemFound.innerHTML += "<div class='displayReviews'> <div class='flexImg'> "+"\
+        "+ "<img src='" + value[i].image + "' >" + "</div> \
+        "+"<div class='descrItemFound'> \
+        "+ value[i].name+ ' '+ '$' + " "+value[i].price + " \
+        "+value[i].restaurants[0].locations[0].City + " <br/> \
+        "+value[i].restaurants[0].locations[1].City + " <br/> \
+        "+value[i].restaurants[0].locations[2].City + "<br/></div></div><br/>";
+    }
     
     console.log(value);
+    myFunction();
+    return false
+}
+
+function showLabelChoice(){
+    document.querySelector("#")
 }
 
 
 
 // functions that load when page is load
 window.onload = function(){
-    setCategory()
+    setCategory();
 }
 
