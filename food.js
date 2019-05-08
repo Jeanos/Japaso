@@ -199,7 +199,7 @@ var food = {
             "description":"Burger is a fire-grilled double burger topped with American cheese, fresh lettuce, tomato and Red's Secret Tavern Sauce on a toasted sesame bun.",
             "price":16,
             "rate":5,
-            "image":"imgs/burgers/RedRobbins/RedsTavernDouble.png"
+            "image":"imgs/burgers/RedRobbins/Red'sTavern Double.png"
         },
         
         
@@ -234,8 +234,7 @@ var food = {
             ],
             "description":"The Royal Red Robin burger from the restaurant Red Robin is one of my favorite burgers to order. This burger is topped with American cheese, lettuce, onion, bacon, a fried egg, and mayonnaise.",
             "price":12,
-            "rate":4,
-            "image":"imgs/burgers/TrippleOs/BuffaloChickenClub.png"
+            "rate":4
         },
         
         //Triple Os 2
@@ -268,14 +267,12 @@ var food = {
             ],
             "description":"Gourmet steak sauce, Bleu cheese crumbles, crispy onion straws, lettuce, tomatoes and chipotle mayo on an onion bun.",
             "price":12,
-            "rate":4,
-            "image":"imgs/burgers/TrippleOs/BuffaloChickenClub.png"
-
+            "rate":4
         },
         
         //Triple Os 3
         {
-            "name":"Crispy Spicy Baja Chicken Burger",
+            "name":"RCrispy Spicy Baja Chicken Burger",
             "restaurants":[
                 {
                     "name":"Triple O's",
@@ -302,9 +299,7 @@ var food = {
             ],
             "description":"Burger is a fire-grilled double burger topped with American cheese, fresh lettuce, tomato and Red's Secret Tavern Sauce on a toasted sesame bun.",
             "price":16,
-            "rate":5,
-            "image":"imgs/burgers/TrippleOs/CrispySpicBajaChickenBurger.jpg"
-
+            "rate":5
         },
         
         

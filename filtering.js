@@ -163,7 +163,7 @@ function displayResearchFinalUI(value){
         "+ value[i].name+ ' '+  " <br/>Price: $"+value[i].price + " <br/>\
         "+value[i].restaurants[0].locations[0].City + " <br/> \
         "+value[i].restaurants[0].locations[1].City + " <br/> \
-        "+value[i].restaurants[0].locations[2].City + "<br/></div><div><button class='red'> Check this Item</button></div></div><br/>";
+        "+value[i].restaurants[0].locations[2].City + "<br/></div><div><button> Check this Item</button></div></div><br/>";
     }
     
     console.log(value);
