@@ -282,7 +282,8 @@ button.searchButton {
 }
 
 .red{
-    background: #a20d0d !important;
+      background: #efa254 !important;
+    border-radius: 5px;
 }
 
 hr {
