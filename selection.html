@@ -1,0 +1,115 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selection</title>
+    <link href="app.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css?family=PT+Sans|Quicksand|ZCOOL+QingKe+HuangYou" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+</head>
+<body>
+    <div id="app">
+        <!-- MENU COMP -->
+        <div id="menuBox">
+            <div id="menu">
+                <a href="#">Search Menu</a>
+                <a href="#">Look for Items</a>
+                <a href="#">Log Out</a>
+                <input onkeyup="changeOp()" id="opacityInput">
+                <i class="fas fa-window-close" onclick="closeMenu()" id="close"></i>
+            </div>
+            <i class="fas fa-bars" onclick="openMenu()" id="open"></i>
+            <div id="topnav">
+                 <p>Selection: Chicken Club</p>
+            </div>
+        </div>
+
+        <div id="content">
+           
+            <div id="banner">
+                <img alt="triple O's" class="bannerImg" src="imgs/banners/tripleosBanner.jpg" />
+            </div>
+            <div>
+                <div class="itemFound">
+                    <h1>Buffalo Chicken Club - Triple O's</h1>
+                    <h3>Burnaby, V5C 3C7</h3>
+                    <p>Our spicy, seasoned, crispy chicken breast, drizzled in Franks RedHotTM sauce, topped with naturally smoked bacon, aged Canadian cheddar, crisp iceberg lettuce, fresh vine-ripened tomatoes, and creamy ranch dressing. </p>
+                    
+                    <a href='order.html'><button class="red">Order</button></a>
+                </div>
+                
+                <h2>Comments</h2>
+                <div id="Comments">
+                    Bacon Chedar Burger
+                </div>
+                   
+                <div class="displayReviews">
+                        <div>
+                            <img src="imgs/placeholder.png" alt="Bacon Cheddar" class="featuredImageBox commentImg">
+                        </div>
+                        
+                        <div class="FeaturedDesc">Peter Chu 
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <p id="commentText">
+                                I tried this burger and it is the best in town right now. I encourage people to buy this. Well served by Triple O's
+                            </p>
+                        </div>
+                </div>
+                <br>
+                
+                 <div class="displayReviews">
+                        <div>
+                            <img src="imgs/placeholder.png" alt="Bacon Cheddar" class="featuredImageBox" id="commentImg">
+                        </div>
+                        
+                        <div class="FeaturedDesc">Peter Chu 
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <p id="commentText">
+                                I tried this burger and it is the best in town right now. I encourage people to buy this. Well served by Triple O's
+                            </p>
+                        </div>
+                </div>
+<!--
+                <div class="displayReviews">
+                    <div>
+                        <img src="imgs/placeholder.png" alt="Bacon Cheddar" class="featuredImageBox" id="commentImg">
+                    </div>
+                    
+                    <div class="FeaturedDesc">John Meyer 
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p id="commentText">
+                            I found easily the location and I order on skip the dishes. So cool
+                        </p>
+                    </div>
+                </div>
+-->
+                </div>
+            </div>
+                
+        </div>
+    <div class="footer">
+        <i class="fas fa-arrow-circle-left fa-2x navIcons"></i>
+        <i class="fas fa-home fa-2x navIcons"></i>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>

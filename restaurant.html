@@ -1,0 +1,128 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurants - Japaso</title>
+    <link href="app.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css?family=PT+Sans|Quicksand|ZCOOL+QingKe+HuangYou" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+</head>
+<body>
+    <div id="app">
+        <!-- MENU COMP -->
+        <div id="menuBox">
+            <div id="menu">
+                <a href="#">Search Menu</a>
+                <a href="#">Look for Items</a>
+                <a href="#">Log Out</a>
+                <i class="fas fa-window-close" onclick="closeMenu()" id="close"></i>
+            </div>
+            <i class="fas fa-bars" onclick="openMenu()" id="open"></i>
+            <div id="topnav">
+                 <p>Selection: Chicken Club</p>
+            </div>
+        </div>
+
+        <div id="content">
+           
+            <div class="bannerImg">
+                <img alt="triple O's" class="bannerImg" src="imgs/restaurant.png" />
+            </div>
+            <div>
+               
+                
+                
+                
+                 <hr>  
+                <div class="displayReviews">
+                        <div class="flexImg">
+                            <img src="imgs/placeholder.png" alt="Bacon Cheddar" class="featuredImageBox commentImg">
+                        </div>
+                        
+                        <div onclick="location.href='search.html';" style="cursor:pointer;" class="FeaturedDesc">Triple O's 
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <p id="commentText">
+                                Red Robin Gourmet Burgers, Vancouver: See 399 unbiased reviews of Red Robin Gourmet Burgers, rated 4 of 5 on TripAdvisor and ranked #214 of 3445
+                            </p>
+                            <button>Check items</button>
+                        </div>
+                </div>
+                <br>
+                <hr>
+                
+                 <div class="displayReviews">
+                         <div class="flexImg">
+                            <img src="imgs/placeholder.png" alt="Bacon Cheddar" class="featuredImageBox commentImg">
+                        </div>
+                        
+                        <div onclick="location.href='search.html';" style="cursor:pointer;" class="FeaturedDesc">Red Robin's 
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <p id="commentText">
+                                Triple O’s Quick Service Restaurants serve the same great taste and quality of White Spot, including 100% fresh Canadian beef.
+                                <button>Check items</button>
+                            </p>
+                        </div>
+                </div>
+                
+                <hr>
+                <div class="displayReviews">
+                        <div  class="flexImg">
+                            <img src="imgs/placeholder.png" alt="Bacon Cheddar" class="featuredImageBox commentImg">
+                        </div>
+                        
+                        <div onclick="location.href='search.html';" style="cursor:pointer;" class="FeaturedDesc">A &amp; W
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <p id="commentText">
+                                Home of the Burger Family and Canada's Best Tasting Burger. Serving delicious burgers, frosted mugs of root beer, and handcrafted onion rings since 1956.
+                                <button>Check items</button>
+                            </p>
+                        </div>
+                </div>
+<!--
+                <div class="displayReviews">
+                    <div>
+                        <img src="imgs/placeholder.png" alt="Bacon Cheddar" class="featuredImageBox" id="commentImg">
+                    </div>
+                    
+                    <div class="FeaturedDesc">John Meyer 
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p id="commentText">
+                            I found easily the location and I order on skip the dishes. So cool
+                        </p>
+                    </div>
+                </div>
+-->
+                </div>
+            </div>
+                
+        </div>
+    <div class="footer">
+        <i class="fas fa-arrow-circle-left fa-2x navIcons"></i>
+        <i class="fas fa-home fa-2x navIcons"></i>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
