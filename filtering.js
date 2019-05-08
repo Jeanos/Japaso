@@ -48,6 +48,7 @@ var proxPkg = new Proxy(pkg, handler);
 // FUNCTIONS THAT NOT INTERACT WITH THE PACKAGE
 function selectCategory(val){
     localStorage.setItem('Category', val.alt);
+    
     location.href ="filterPage.html";
 }
 
@@ -159,10 +160,10 @@ function displayResearchFinalUI(value){
         itemFound.innerHTML += "<div class='displayReviews'> <div class='flexImg'> "+"\
         "+ "<img src='" + value[i].image + "' >" + "</div> \
         "+"<div class='descrItemFound'> \
-        "+ value[i].name+ ' '+ '$' + " "+value[i].price + " \
+        "+ value[i].name+ ' '+  " <br/>Price: $"+value[i].price + " <br/>\
         "+value[i].restaurants[0].locations[0].City + " <br/> \
         "+value[i].restaurants[0].locations[1].City + " <br/> \
-        "+value[i].restaurants[0].locations[2].City + "<br/></div></div><br/>";
+        "+value[i].restaurants[0].locations[2].City + "<br/></div><div><button> Check this Item</button></div></div><br/>";
     }
     
     console.log(value);
@@ -171,7 +172,7 @@ function displayResearchFinalUI(value){
 }
 
 function showLabelChoice(){
-    document.querySelector("#")
+    document.querySelector("#label").innerText = "You are in: " + pkg.catChoice;
 }
 
 
@@ -179,5 +180,6 @@ function showLabelChoice(){
 // functions that load when page is load
 window.onload = function(){
     setCategory();
+    showLabelChoice();
 }
 

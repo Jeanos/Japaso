@@ -97,7 +97,8 @@ var food = {
             ],
             "description":"blabh",
             "price":15,
-            "rate":3
+            "rate":3,
+            "image":"imgs/burgers/AandW/CheddarBacon UncleBurger.jpg"
         },
         
         //Red Robbins
@@ -130,7 +131,8 @@ var food = {
             ],
             "description":"The Royal Red Robin burger from the restaurant Red Robin is one of my favorite burgers to order. This burger is topped with American cheese, lettuce, onion, bacon, a fried egg, and mayonnaise.",
             "price":12,
-            "rate":4
+            "rate":4,
+            "image":"imgs/burgers/RedRobbins/RoyalRedRobinBurger.jpg"
         },
         
         //Red Robin's Burger 2
@@ -163,7 +165,8 @@ var food = {
             ],
             "description":"Gourmet steak sauce, Bleu cheese crumbles, crispy onion straws, lettuce, tomatoes and chipotle mayo on an onion bun.",
             "price":12,
-            "rate":4
+            "rate":4,
+             "image":"imgs/burgers/RedRobbins/BleuRibbon.png"
         },
         
         //Red Robin burger 3
@@ -195,7 +198,8 @@ var food = {
             ],
             "description":"Burger is a fire-grilled double burger topped with American cheese, fresh lettuce, tomato and Red's Secret Tavern Sauce on a toasted sesame bun.",
             "price":16,
-            "rate":5
+            "rate":5,
+            "image":"imgs/burgers/RedRobbins/Red'sTavern Double.png"
         },
         
         
@@ -594,7 +598,7 @@ var food = {
     
     //Steak Items
     
-    steak:[
+    steaks:[
         
         //The KEG
       
@@ -625,8 +629,9 @@ var food = {
                 }
             ],
             "description":"(10oz. $33. 14oz. $37) - Well trimmed, aged for extra flavour and tenderness, cooked to perfection with Keg seasoning. PRIME RIB. horseradish, red wine herb jus. (Our cuts are well trimmed, aged to perfection and grilled over high heat with Keg seasoning, resulting in a juicy and flavourful steak.)",
-            "price":33,
-            "rate":4
+            "price":28,
+            "rate":4,
+            "image":"imgs/steaks/primeRib.jpg"
         },
             
         {
