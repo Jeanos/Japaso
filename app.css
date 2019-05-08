@@ -1,45 +1,128 @@
 body{
     margin:0px;
 }
+
+h1{
+    color: #a72021;
+    font-size: 14pt;
+}
+div.search{
+    width: 70% !important;
+}
+#infosDiv{
+    margin: 10px;
+    font-size: 10pt;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+}  
+#placeholder{
+    color: #ddd;
+}
+.center{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16pt
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #973939;
+   color: white;
+   text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom:0px;
+    position: sticky;
+}
+.navIcons{
+    display: flex;
+    flex: 3;
+}
+h2{
+    color: #efa254;
+    border-bottom: 1px solid #eee;
+}
+.FeaturedDesc{
+    color: #efa254;
+    font-weight: 600;
+    text-align: left;
+}
 #app {
     margin: 0px;
     font-family: 'Quicksand', sans-serif;
+    margin-bottom: 30px;
+}
+
+.itemFound{
+    
+    padding: 10px;
+    border: 1px solid #eee;
+    background: #f9f9f9;
+}
+
+.itemsFound{
+    flex-direction: column;
+    display: list-item;
     width: 100%;
+}
+
+.flexImg {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+
+.flexImg > img{
+    flex-direction: column;
+    display: list-item;
+    width: 90%;
 }
 
 #menuBox{
     display: flex;
     flex-direction: row;
-    background: #396d98;
-    
+    height: 50px;
+    background: #983939;
 }
 #menu {
     margin: 0px;
     flex: 50%;
-    background-color: #1b5482;
+    background-color: #311010;
     flex-direction: column;
     position: fixed;
-    left: -150px;
+    left: -215px;
     top: 0;
     opacity: 1;
     transition: left 0.5s, opacity 0.5s;
     height: 100vh;
+    z-index: 2;
 }
-input {
-    display: none;
+#searchBar{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 #menu a {
     display: flex;
     flex: 1;
-    background: #174d7b;
+    background: #311010;
     padding: 10px;
     color: white;
     text-decoration: none;
-    border-bottom: 1px solid #134069;
+    border-bottom: 1px solid #652727;
 
 }
 #menu a:hover {
-    background: #3985bf;
+    background: #652727;
 }
 #menu a:first-child {
     margin-top: 50px;
@@ -50,33 +133,33 @@ input {
     right: 0;
     position: absolute;
      color: white;
-    font-size: 20px;
+    font-size: 30px;
     padding: 5px;
     margin: 5px
 }
 #open{
     top: 0;
     left: 0;
-     color: white;
-    font-size: 20px;
+    color: white;
+    font-size: 30px;
     padding: 5px;
     margin: 5px;
-    border: #ddd 1px solid;
+    border: #b97474 1px solid;
 }
 
 #topnav > p {
     top: 0;
     right: 0;
-    position: fixed;
+    position: absolute;
     flex: 50%;
-    padding-right: 10%;
-    color: white
+    padding-right: 2%;
+    color: white;
 }
+
 #content{
-    margin: 10px;
-    display: flex;
-    flex-direction: row;
+    margin: 5px;
 }
+
 #meal-search{
     display: flex;
     height: 40px;
@@ -86,14 +169,12 @@ input {
     display: flex;
     flex-direction: column;
 }
-#search {
-    height: 46px;
-}
+
 .imagesItems{
     width: 250px;
 }
 items{
-
+    
 }
 .field{
     display: flex;
@@ -112,12 +193,298 @@ items{
 }
 
 #boldProName{
-font-weight: 100;
+    font-weight: 100;
     color: #ffffff;
     background: #4CAF50;
     padding: 10px;
     margin: 0;
 }
 
+input[type=text], select {
+      width: 100%;
+      padding: 12px 10px;
+      margin: 10px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    font-size: 16px;
+    height: 45px;
+    background: #fff;
+    
+}
+button,input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 0px;
+  font-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 
+button {
+    -webkit-appearance: none;
+}
+
+#divFeaturedImages{
+    width: 100%;
+    display: inline-flex;
+    margin: 5px;
+}
+
+.featuredImageBox{
+    display: flex;
+    width: 80%;
+    margin: 10px;
+    flex: 2;
+   
+}
+
+#commentImg{
+    width: 80%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#commentText{
+    color: black;
+    text-align: left;
+    flex: 3;
+}
+
+.checked {
+  color: orange;
+}
+.bannerImg{
+    width: 100%;
+}
+
+button.searchButton {
+    padding: 10px;
+    height: 40px;
+}
+.displayReviews{
+    display: flex;
+    flex-direction: row;
+}
+
+.FeaturedBurgers{
+    color: #d84e00;
+    font-weight: 600;
+    text-align: center;
+}
+
+.red{
+    background: #a20d0d !important;
+}
+
+hr {
+    border-top: dotted 2px;
+}
+
+/* Search */
+.search-content {
+    margin: 20px;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.col-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
+.mt-4,
+.my-4 {
+    margin-top: 1.5rem !important;
+}
+
+.col-4,
+.col-8 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.d-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+.align-items-center {
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.descrItemFound {
+    display: inherit;
+    width: 70%;
+    flex: 6;
+}
+
+.restaurant-container {
+    margin: 20px 0;
+    border-color: lightgray;
+}
+
+.restaurant-container .restaurant-img {
+    background-image: url("./imgs/burger.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+}
+
+.restaurant-container h3{
+    color: #efa254;
+}
+
+.search-panel {
+    margin: 0 40px;
+}
+
+.search-panel > .search-controls {
+    display: flex;
+}
+
+.search-controls > .dropdownloc{
+    width: 150px;
+    border-color: #983939;
+}
+
+.search-controls > .dropdownpri{
+    margin-left: 20px;
+    width: 80px;
+    border-color: #983939;
+}
+
+.search-panel > .searchbut{
+    padding: 10px;
+    height: 40px;
+    background-color: #000;
+    width: 100px;
+    text-align: center;
+    align-content: center;
+    border-radius: 20px;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .cover-img>.cover-name {
+        font-size: 4em;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .cover-img>.cover-name {
+        font-size: 5em;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .cover-img>.cover-name {
+        font-size: 6em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    .cover-img>.cover-name {
+        font-size: 7em;
+    }
+}
+
+#loader {
+    position: absolute;
+    display: none;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin-left: -50px;
+    margin-right: auto;
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #a23035;
+    width: 80px;
+    height: 80px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
 }

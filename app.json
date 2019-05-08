@@ -2,10 +2,12 @@
     {
         "product_image":"<img class='imagesItems' src='imgs/papaBurger.jpeg'>",
         "product_name":"Papa Burger",
-        "product_color":"Brown",
-        "product_categ":"burger",
-        "product_id":1234,
-        "product_price":10
+        "product_Description":"100% fresh Canadian beef, naturally smoked bacon, aged Canadian cheddar, crisp iceberg lettuce, fresh vine-ripened   tomatoes, secret Triple sauce and our signature pickle on top.",
+        "restaurant":"A&W",
+        "restaurantLocation":["Vancouver","Coquitlam","Surrey"],
+        "restaurant Description" : " V5C 3C3",
+        "rate":5,
+        "price":10,
     },
     {
         "product_image":"<img class='imagesItems' src='imgs/mamaBurger.jpeg'>",
