@@ -593,9 +593,6 @@ var food = {
         }
     ], //not sure if have to close
     
-    
-    
-    
     //Steak Items
     
     steaks:[
@@ -887,9 +884,6 @@ var food = {
         }
     ],
     
-    
-    
-    
     //Pasta Item
     
     pizza:[
@@ -987,198 +981,352 @@ var food = {
         }
     ], //not sure if have to close
     
-    //Pasta Item
+    // Pasta Item
     
     pasta:[
         {
-            "name":"First Pasta",
+            "name":"Penne Arrabiata",
             "restaurants":[
                 {
-                    "name":"TripleOs",
+                    "name":"Basil Pasta Bar",
                     "locations":[
                         {
                             "City":"Vancouver", 
-                            "Postal Code":"V33CF3", 
-                            "Tel":"7785747383"
-                        },
-                        
-                        {
-                            "City":"Vancouver", 
-                            "Postal Code":"V33CF3", 
-                            "Tel":"7785747383"
-                        },
-                        
-                        {
-                            "City":"Vancouver", 
-                            "Postal Code":"V33CF3", 
-                            "Tel":"7785747383"
-                        },  
+                            "Postal Code":"V6B 2G5", 
+                            "Tel":"(604) 568-3106"
+                        }
                     ]
                 }
             ],
-            "description":"blabh",
-            "price":10,
-            "rate":2
+            "description":"Relaxed restaurant serving create-your-own pasta dishes with a choice of sauces, veggies & proteins.",
+            "price":10.99,
+            "rate":4
         },
-            
         {
-            "name":"Second Pasta",
+            "name":"Pesto Shrimp Linguine",
             "restaurants":[
                 {
-                    "name":"TripleOs",
+                    "name":"Basil Pasta Bar",
                     "locations":[
                         {
                             "City":"Vancouver", 
-                            "Postal Code":"V33CF3", 
-                            "Tel":"7785747383"
-                        },
-                        
-                        {
-                            "City":"Vancouver", 
-                            "Postal Code":"V33CF3", 
-                            "Tel":"7785747383"
-                        },
-                        
-                        {
-                            "City":"Vancouver", 
-                            "Postal Code":"V33CF3", 
-                            "Tel":"7785747383"
-                        },  
+                            "Postal Code":"V6B 2G5", 
+                            "Tel":"(604) 568-3106"
+                        }
                     ]
                 }
             ],
-            "description":"blabh",
-            "price":10,
-            "rate":2
+            "description":"Relaxed restaurant serving create-your-own pasta dishes with a choice of sauces, veggies & proteins.",
+            "price":10.99,
+            "rate":4
         },
-        
         {
-            "name":"third Pasta",
+            "name":"Penne Arrabiata",
             "restaurants":[
                 {
-                    "name":"TripleOs",
+                    "name":"Basil Pasta Bar",
                     "locations":[
                         {
                             "City":"Vancouver", 
-                            "Postal Code":"V33CF3", 
-                            "Tel":"7785747383"
-                        },
-                        
-                        {
-                            "City":"Vancouver", 
-                            "Postal Code":"V33CF3", 
-                            "Tel":"7785747383"
-                        },
-                        
-                        {
-                            "City":"Vancouver", 
-                            "Postal Code":"V33CF3", 
-                            "Tel":"7785747383"
-                        },  
+                            "Postal Code":"V6B 2G5", 
+                            "Tel":"(604) 568-3106"
+                        }
                     ]
                 }
             ],
-            "description":"blabh",
-            "price":10,
-            "rate":2
+            "description":"Relaxed restaurant serving create-your-own pasta dishes with a choice of sauces, veggies & proteins.",
+            "price":10.99,
+            "rate":4
+        },
+        {
+            "name":"rigatoni alla bolognese",
+            "restaurants":[
+                {
+                    "name":"Ask For Luigi Restaurant",
+                    "locations":[
+                        {
+                            "City":"Vancouver", 
+                            "Postal Code":"V6A 1C4", 
+                            "Tel":"(604) 428-2544"
+                        }
+                    ]
+                }
+            ],
+            "description":"Pint-size eatery serving large, refined Italian dishes meant for sharing, with gluten-free choices.",
+            "price":19,
+            "rate":4.4
+        },
+        {
+            "name":"spaghetti al pomodoro",
+            "restaurants":[
+                {
+                    "name":"Ask For Luigi Restaurant",
+                    "locations":[
+                        {
+                            "City":"Vancouver", 
+                            "Postal Code":"V6A 1C4", 
+                            "Tel":"(604) 428-2544"
+                        }
+                    ]
+                }
+            ],
+            "description":"Pint-size eatery serving large, refined Italian dishes meant for sharing, with gluten-free choices.",
+            "price":17,
+            "rate":4.4
+        },
+        {
+            "name":"garganelli",
+            "restaurants":[
+                {
+                    "name":"Ask For Luigi Restaurant",
+                    "locations":[
+                        {
+                            "City":"Vancouver", 
+                            "Postal Code":"V6A 1C4", 
+                            "Tel":"(604) 428-2544"
+                        }
+                    ]
+                }
+            ],
+            "description":"Pint-size eatery serving large, refined Italian dishes meant for sharing, with gluten-free choices.",
+            "price":21,
+            "rate":4.4
+        },
+        {
+            "name":"Pot-Pourri Spaghetti",
+            "restaurants":[
+                {
+                    "name":"The Old Spaghetti Factory",
+                    "locations":[
+                        {
+                            "City":"Vancouver", 
+                            "Postal Code":"V6B 1A1", 
+                            "Tel":"(604) 684-1288"
+                        } 
+                    ]
+                }
+            ],
+            "description":"Family-friendly chain eatery featuring traditional Italian entrees amid turn-of-the-century decor.",
+            "price":13.95,
+            "rate":4.3
+        },
+        {
+            "name":"Spaghetti with Meatballs",
+            "restaurants":[
+                {
+                    "name":"The Old Spaghetti Factory",
+                    "locations":[
+                        {
+                            "City":"Vancouver", 
+                            "Postal Code":"V6B 1A1", 
+                            "Tel":"(604) 684-1288"
+                        } 
+                    ]
+                }
+            ],
+            "description":"Family-friendly chain eatery featuring traditional Italian entrees amid turn-of-the-century decor.",
+            "price":15.95,
+            "rate":4.3
+        },
+        {
+            "name":"Penne with Chicken",
+            "restaurants":[
+                {
+                    "name":"The Old Spaghetti Factory",
+                    "locations":[
+                        {
+                            "City":"Vancouver", 
+                            "Postal Code":"V6B 1A1", 
+                            "Tel":"(604) 684-1288"
+                        } 
+                    ]
+                }
+            ],
+            "description":"Family-friendly chain eatery featuring traditional Italian entrees amid turn-of-the-century decor.",
+            "price":16.25,
+            "rate":4.3
         }
     ],
     
-    
-    //Chicken Item
+    // Chicken Item
     
     chicken:[
         {
-            "name":"First Chicken",
+            "name":"Fried Chicken",
             "restaurants":[
                 {
-                    "name":"TripleOs",
+                    "name":"Zabu Chicken",
                     "locations":[
                         {
                             "City":"Vancouver", 
                             "Postal Code":"V33CF3", 
                             "Tel":"7785747383"
-                        },
-                        
-                        {
-                            "City":"Vancouver", 
-                            "Postal Code":"V33CF3", 
-                            "Tel":"7785747383"
-                        },
-                        
-                        {
-                            "City":"Vancouver", 
-                            "Postal Code":"V33CF3", 
-                            "Tel":"7785747383"
-                        },  
+                        }
                     ]
                 }
             ],
-            "description":"blabh",
-            "price":10,
-            "rate":2
+            "description":"Simple, contemporary eatery with a menu specializing in Korean fried chicken, katsu & salad.",
+            "price":20.95,
+            "rate":3.8
         },
-            
         {
-            "name":"Second Chicken",
+            "name":"Soy Sal-Sal Chicken",
             "restaurants":[
                 {
-                    "name":"TripleOs",
+                    "name":"Zabu Chicken",
                     "locations":[
                         {
                             "City":"Vancouver", 
                             "Postal Code":"V33CF3", 
                             "Tel":"7785747383"
-                        },
-                        
-                        {
-                            "City":"Vancouver", 
-                            "Postal Code":"V33CF3", 
-                            "Tel":"7785747383"
-                        },
-                        
-                        {
-                            "City":"Vancouver", 
-                            "Postal Code":"V33CF3", 
-                            "Tel":"7785747383"
-                        },  
+                        }
                     ]
                 }
             ],
-            "description":"blabh",
-            "price":10,
-            "rate":2
+            "description":"Simple, contemporary eatery with a menu specializing in Korean fried chicken, katsu & salad.",
+            "price":20.95,
+            "rate":3.8
         },
-        
         {
-            "name":"third Chicken",
+            "name":"Yang Nyum Chicken",
             "restaurants":[
                 {
-                    "name":"TripleOs",
+                    "name":"Zabu Chicken",
+                    "locations":[
+                        {
+                            "City":"Vancouver", 
+                            "Postal Code":"V33CF3", 
+                            "Tel":"7785747383"
+                        }
+                    ]
+                }
+            ],
+            "description":"Simple, contemporary eatery with a menu specializing in Korean fried chicken, katsu & salad.",
+            "price":21.95,
+            "rate":3.8
+        },
+        {
+            "name":"Jujeh",
+            "restaurants":[
+                {
+                    "name":"Cazba",
                     "locations":[
                         {
                             "City":"Vancouver", 
                             "Postal Code":"V33CF3", 
                             "Tel":"7785747383"
                         },
-                        
+                        {
+                            "City":"North Vancouver", 
+                            "Postal Code":"V33CF3", 
+                            "Tel":"7785747383"
+                        } 
+                    ]
+                }
+            ],
+            "description":"Chicken pieces are smothered in a delicious saffron chicken kebob marinade and have such delicious flavor thanks to saffron and lemon",
+            "price":12.99,
+            "rate":4
+        },
+        {
+            "name":"Vaziri",
+            "restaurants":[
+                {
+                    "name":"Cazba",
+                    "locations":[
                         {
                             "City":"Vancouver", 
                             "Postal Code":"V33CF3", 
                             "Tel":"7785747383"
                         },
-                        
+                        {
+                            "City":"North Vancouver", 
+                            "Postal Code":"V33CF3", 
+                            "Tel":"7785747383"
+                        } 
+                    ]
+                }
+            ],
+            "description":"Combination of kabab joojeh and kabab koobideh skewers",
+            "price":14.99,
+            "rate":4
+        },
+        {
+            "name":"Fesenjan",
+            "restaurants":[
+                {
+                    "name":"Cazba",
+                    "locations":[
                         {
                             "City":"Vancouver", 
                             "Postal Code":"V33CF3", 
                             "Tel":"7785747383"
-                        },  
+                        },
+                        {
+                            "City":"North Vancouver", 
+                            "Postal Code":"V33CF3", 
+                            "Tel":"7785747383"
+                        } 
                     ]
                 }
             ],
-            "description":"blabh",
-            "price":10,
-            "rate":2
+            "description":"Traditional chicken-and-walnut stew",
+            "price":13.99,
+            "rate":4
+        },
+        {
+            "name":"ROTISSERIE CHICKEN",
+            "restaurants":[
+                {
+                    "name":"Juke Fried Chicken",
+                    "locations":[
+                        {
+                            "City":"Vancouver", 
+                            "Postal Code":"V33CF3", 
+                            "Tel":"7785747383"
+                        }
+                    ]
+                }
+            ],
+            "description":"Rotisserie chicken is a chicken dish that is cooked on a rotisserie, using direct heat in which the chicken is placed next to the heat source",
+            "price":25,
+            "rate":4.2
+        },
+        {
+            "name":"FRIED CHICKEN SANDWICH",
+            "restaurants":[
+                {
+                    "name":"Juke Fried Chicken",
+                    "locations":[
+                        {
+                            "City":"Vancouver", 
+                            "Postal Code":"V33CF3", 
+                            "Tel":"7785747383"
+                        }
+                    ]
+                }
+            ],
+            "description":"Hip kitchen & bar turning out fried chicken platters & sandwiches in a stylish, loft-like space.",
+            "price":12,
+            "rate":4.2
+        },
+        {
+            "name":"FRIED CHICKEN",
+            "restaurants":[
+                {
+                    "name":"Juke Fried Chicken",
+                    "locations":[
+                        {
+                            "City":"Vancouver", 
+                            "Postal Code":"V33CF3", 
+                            "Tel":"7785747383"
+                        }
+                    ]
+                }
+            ],
+            "description":"Hip kitchen & bar turning out fried chicken platters & sandwiches in a stylish, loft-like space.",
+            "price":27.5,
+            "rate":4.2
         }
     ]
     
