@@ -18,15 +18,14 @@ function loadRestaurants(restaurants) {
 
 function createRestaurantView(restaurant) {
     var html =
-        `<hr>
+    `<hr>
     <div class="restaurant-view">
-        <div class="flexImg">
-            <img class="featuredImageBox commentImg" src="imgs/placeholder.png">
-        </div>
-        <div onclick="onRestaurantClick()">
+        <div class="restaurant-img"></div>
+        <div onclick="onRestaurantClick()" class="restaurant-info">
             <h3>{{name}}</h3>
             <div class="review">{{review}}</div>
             <p>{{description}}</p>
+            <button>Check items</button>
         </div>
     </div>`
 
@@ -50,15 +49,16 @@ function createReview(review) {
 }
 
 function selectCategory(id) {
-    var category = categories.find(c => c.id == id),
+    var categories = Object.keys(food);
+    var category = categories.find(c => c == id),
         name = "Unknown";
     if(category) {
-        name = category.name;
+        name = category;
     }
 
     $("#categorySelection").text('Selection: ' + name);
 }
 
 function onRestaurantClick() {
-    location.href = 'filterPage.html';
+    location.href = 'search.html';
 }
