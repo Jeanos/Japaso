@@ -27,7 +27,11 @@
             </div>
             <i class="fas fa-bars" onclick="openMenu()" id="open"></i>
             <div id="topnav">
-                 <p>Selection: Chicken Club</p>
+                 <p id="label">Selection: Chicken Club</p>
+            </div>
+            
+            <div id="centerNav">
+                 <img class="logo" src="/imgs/japasoLogo.png"/>
             </div>
         </div>
 
@@ -38,9 +42,9 @@
             </div>
             <div>
                 <div class="itemFound">
-                    <h1>Buffalo Chicken Club - Triple O's</h1>
-                    <h3>Burnaby, V5C 3C7</h3>
-                    <p>Our spicy, seasoned, crispy chicken breast, drizzled in Franks RedHotTM sauce, topped with naturally smoked bacon, aged Canadian cheddar, crisp iceberg lettuce, fresh vine-ripened tomatoes, and creamy ranch dressing. </p>
+                    <h1 class="foundName"></h1>
+                    <h3 class="locations"></h3>
+                    <p class="description">Our spicy, seasoned, crispy chicken breast, drizzled in Franks RedHotTM sauce, topped with naturally smoked bacon, aged Canadian cheddar, crisp iceberg lettuce, fresh vine-ripened tomatoes, and creamy ranch dressing. </p>
                     
                     <a href='order.html'><button class="red">Order</button></a>
                 </div>
@@ -110,6 +114,9 @@
         <i class="fas fa-arrow-circle-left fa-2x navIcons"></i>
         <i class="fas fa-home fa-2x navIcons"></i>
     </div>
+    <script src="filtering.js"></script>
+    <script src="selection.js"></script>
 <script src="app.js"></script>
+
 </body>
 </html>

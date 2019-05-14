@@ -15,7 +15,13 @@ var pkg = {
     minRate: "",
     maxRate: "",
     itemFiltered: "",
-    displayResearch: ""
+    displayResearch: "",
+    selectedItemName: "",
+    selectedItemHTML: "",
+    selectedItemLocation: "",
+    selectedItemDescription: "",
+    selectedItemImage: "",
+    page: ""
 };
 /* ============== STATE =============== . */
 var handler = {
@@ -99,6 +105,8 @@ function selectPrice(){
     proxPkg.price = ("Price Range: From $" + pkg.minPrice + " to $" + pkg.maxPrice);
     
 }
+
+
 function selectRate(){
     pkg.rate = document.querySelector('#rate').value;
     if( pkg.rate == "less2Stars"){
@@ -160,15 +168,47 @@ function displayResearchFinalUI(value){
         itemFound.innerHTML += "<div class='displayReviews'> <div class='flexImg'> "+"\
         "+ "<img src='" + value[i].image + "' >" + "</div> \
         "+"<div class='descrItemFound'> \
-        "+ value[i].name+ ' '+  " <br/>Price: $"+value[i].price + " <br/>\
-        "+value[i].restaurants[0].locations[0].City + " <br/> \
-        "+value[i].restaurants[0].locations[1].City + " <br/> \
-        "+value[i].restaurants[0].locations[2].City + "<br/></div><div><button> Check this Item</button></div></div><br/>";
+        "+ "<span class='nameDisplay'>"+ value[i].name+ "</span>" +  " <br/>Price: $"+value[i].price + " <br/>\
+        "+ "<span class='descriptionDisplay'>"+ value[i].description+ "</span>"+" <br/>\
+        "+"<p class='allLocations'>All Locations</p> <div class='restLocations'>"+value[i].restaurants[0].locations[0].City + "  \
+        "+value[i].restaurants[0].locations[1].City + "  \
+        "+value[i].restaurants[0].locations[2].City +"</div>" + "<br/></div><div class='checkItemDiv'><button id='checkThisItem' onclick='checkThisProduct(this)'> Check Item</button></div></div><br/>";
     }
     
     console.log(value);
     myFunction();
     return false
+}
+
+function checkThisProduct(el){
+//    pkg.selectedItemHTML = el.innerHTML;
+//    
+//    
+    
+//     var productHTML = el.currentTarget.parentNode.parentNode.querySelector('.descrItemFound').innerHTML;
+el.parentNode.parentNode.querySelector(".descriptionDisplay").style.dispay = "flex";
+
+pkg.selectedItemDescription = el.parentNode.parentNode.querySelector(".descriptionDisplay").innerText;
+pkg.selectedItemLocation = el.parentNode.parentNode.querySelector(".restLocations").innerText;
+pkg.selectedItemName = el.parentNode.parentNode.querySelector(".nameDisplay").innerText;
+pkg.selectedItemImage = el.parentNode.parentNode.querySelector(".flexImg").querySelector('img').src;
+    
+localStorage.setItem('SelectedDescription', pkg.selectedItemDescription);
+localStorage.setItem('SelectedItemLocation', pkg.selectedItemLocation);
+localStorage.setItem('SelectedItemName', pkg.selectedItemName);
+localStorage.setItem('SelectedItemImage', pkg.selectedItemImage);
+    
+    
+console.log(el.parentNode.parentNode.querySelector(".descriptionDisplay").innerText);
+console.log(el.parentNode.parentNode.querySelector(".restLocations").innerText);
+console.log(el.parentNode.parentNode.querySelector(".nameDisplay").innerText);
+console.log(el.parentNode.parentNode.querySelector(".flexImg").querySelector('img').src);
+
+location.href = "selection.html";
+
+//    alert(productHTML);
+    
+
 }
 
 function showLabelChoice(){

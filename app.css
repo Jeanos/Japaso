@@ -1,7 +1,10 @@
 body{
     margin:0px;
 }
-
+#centerNav {
+    margin-left: auto;
+    margin-right: auto;
+}
 h1{
     color: #a72021;
     font-size: 14pt;
@@ -74,7 +77,7 @@ h2{
 .flexImg {
     display: flex;
     flex-direction: column;
-    flex: 3;
+    flex: 4;
 }
 
 .flexImg > img{
@@ -146,6 +149,7 @@ h2{
     margin: 5px;
     border: #b97474 1px solid;
 }
+
 
 #topnav > p {
     top: 0;
@@ -273,6 +277,9 @@ button.searchButton {
 .displayReviews{
     display: flex;
     flex-direction: row;
+    border-bottom: 2px solid #ddd;
+    border: 1px solid #ddd;
+    padding: 5px;
 }
 
 .FeaturedBurgers{
@@ -348,6 +355,7 @@ hr {
     display: inherit;
     width: 70%;
     flex: 6;
+    flex-direction: column;
 }
 
 .restaurant-container {
@@ -524,3 +532,43 @@ hr {
     flex: 1;
     margin-right: 10px;
 }
+
+.allLocations{
+    color: #efa254;
+    font-weight: bold;
+    font-size: 14pt;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+.restLocations{
+    font-size: 10pt;
+}
+
+span.nameDisplay {
+    margin-bottom: -20px;
+    color: #a62122;
+    font-weight: 800;
+    font-size: 16pt;
+}
+
+.checkItemDiv{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.descriptionDisplay{
+    display:none;
+}
+
+.logo {
+    color: white;
+    margin-right: 35px;
+    padding: 5px;
+    background: #ffffffc9;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+}
+
