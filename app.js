@@ -58,7 +58,7 @@ var p = new Proxy(package, packageChange);
 // Button Click
 
 home.addEventListener("click", function(){
-    location.href = "app.html";
+    location.href = "Getstarted.html";
 })
 
 back.addEventListener("click", function(){
