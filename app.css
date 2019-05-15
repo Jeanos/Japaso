@@ -5,6 +5,9 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+#currentPage{
+    visibility: hidden;
+}
 h1{
     color: #a72021;
     font-size: 14pt;
@@ -514,6 +517,12 @@ hr {
     flex-direction: row;
 }
 
+.infos{
+    display: flex;
+    flex: 5;
+    flex-direction: column;
+}
+
 .restaurant-view h3 {
     color: #efa254;
     font-weight: 600;
@@ -549,7 +558,7 @@ span.nameDisplay {
     margin-bottom: -20px;
     color: #a62122;
     font-weight: 800;
-    font-size: 16pt;
+    font-size: 14pt;
 }
 
 .checkItemDiv{
@@ -572,3 +581,17 @@ span.nameDisplay {
     height: 100%;
 }
 
+#checkThisItem{
+    background: #efa254;
+    border-radius: 5px;
+    box-shadow: 2px 2px 7px 0px #b7b7b7;
+    background-color: 
+}
+
+img#choosenImage {
+    width: 100%;
+}
+
+#goHome:hover{
+    cursor: pointer;
+}

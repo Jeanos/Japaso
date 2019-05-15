@@ -2,6 +2,8 @@ var home = document.querySelector(".fa-home");
 var back = document.querySelector(".fa-arrow-circle-left");
 var myVar;
 
+
+
 function myFunction() {
   myVar = setTimeout(showPage, 2000);
     document.querySelector("body").style.opacity = "0.5";
@@ -12,6 +14,7 @@ function showPage() {
   document.querySelector(".itemsFound").style.display = "flex";
     document.querySelector("body").style.opacity = "1";
 }
+
 
 
 //states
