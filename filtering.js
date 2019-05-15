@@ -70,10 +70,6 @@ function filteredItems() {
     });
     pkg.itemFiltered = filtered;
 
-    if (pkg.itemFiltered.length == 0) {
-        console.log("itemNotFound");
-        document.querySelector(".itemsFound").innerText = "Items not in the Database";
-    }
     proxPkg.itemFiltered = filtered;
 }
 // FUNCTION THAT CHANGE STATE ON THE PACKAGE
@@ -153,9 +149,6 @@ function displaySearchRate(val) {
 
 function displayResearchFinalUI(value) {
     var itemFound = document.querySelector(".itemsFound");
-    if (!itemFound || value.length == 0) {
-        return;
-    }
 
     itemFound.innerText = "";
     document.querySelector("#locationDisplay").style.display = "none";
@@ -172,6 +165,11 @@ function displayResearchFinalUI(value) {
         " + "<span class='descriptionDisplay'>" + value[i].description + "</span>" + "\
         " + "<p class='allLocations'>All Locations</p> <div class='restLocations'>" + getLocations(value[i].restaurants[0]) + "</div>" +
             "</div><div class='checkItemDiv'><button id='checkThisItem' onclick='checkThisProduct(this)'> Check Item</button></div></div></div><br/>";
+    }
+
+    if (value.length == 0) {
+        itemFound.style.display = "block";
+        itemFound.innerText = "Items not in the Database";
     }
 
     myFunction();
