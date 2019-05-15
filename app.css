@@ -222,12 +222,12 @@ input[type=text], select {
 }
 button,input[type=submit] {
   width: 100%;
-  background-color: #4CAF50;
+  background-color: #441717;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
-  border-radius: 0px;
+  border-radius: 25px;
   font-size: 16px;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -594,4 +594,57 @@ img#choosenImage {
 
 #goHome:hover{
     cursor: pointer;
+}
+
+/* 
+ * App logo
+ */
+.app-container {
+    height: calc(100vh - 222px);
+    margin: 60px auto;
+    max-width: 600px;
+    position: relative;
+}
+
+.app-logo {
+    background-image: url(imgs/app-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+.app-container h2 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    color: #973939;
+    font-size: 25px;
+    border: none;
+}
+
+.app-container .partners {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.app-container .partners>img{
+    width: 60px;
+    height: 60px;
+    padding: 2px;
+}
+
+@media (max-width: 700px) {
+    .app-logo {
+        margin: 60px;
+    }
+
+    .app-container h2 {
+        left: 20px;
+        top: -20px;
+    }
 }

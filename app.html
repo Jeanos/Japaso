@@ -3,8 +3,9 @@
 <head>
     <title>JAPASO</title>
     <link href="app.css" rel="stylesheet" />
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-   <link href="https://fonts.googleapis.com/css?family=PT+Sans|Quicksand|ZCOOL+QingKe+HuangYou" rel="stylesheet">
+    <link href="animate.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Quicksand|ZCOOL+QingKe+HuangYou" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -13,33 +14,27 @@
         <!-- MENU COMP -->
         <div id="menuBox">
             <div id="menu">
-                <a href="#">Search Menu</a>
+                <a onclick="goToSearchMenu()">Search Menu</a>
                 <a href="#">Look for Items</a>
                 <a href="#">Log Out</a>
                 <input onkeyup="changeOp()" id="opacityInput">
                 <i class="fas fa-window-close" onclick="closeMenu()" id="close"></i>
             </div>
             <i class="fas fa-bars" onclick="openMenu()" id="open"></i>
-            <div id="topnav">
-                 <p>Selection: Chicken Club</p>
-            </div>
+            <div id="topnav"></div>
         </div>
 
         <div id="content">
-<!--
-          <button id="search"> Display Product</button>
-            <div class="inline-search">
-
-                <div class="field">
-
-                </div> <br/><br/>
-                <div id="productDiv">
-                    <div id="productImage"></div>
-                    <div id="productDesc"> </div>
+            <div class="app-container">
+                <div class="app-logo lightSpeedIn animated"></div>
+                <h2 class="fadeInLeftBig animated">Find your favorite food</h2>
+                <div class="partners bounceInUp animated">
+                    <img src="imgs/skipthedishlogo.jpg">
+                    <img src="imgs/foodora.jpg">
+                    <img src="imgs/door_dash.jpg">
+                    <img src="imgs/skipthedishlogo.jpg">
                 </div>
             </div>
--->
-            <div id="demo"></div>
         </div>
     </div> 
     <div class="footer">

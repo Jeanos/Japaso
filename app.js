@@ -58,12 +58,16 @@ var p = new Proxy(package, packageChange);
 // Button Click
 
 home.addEventListener("click", function(){
-    location.href = "./";
+    location.href = "app.html";
 })
 
 back.addEventListener("click", function(){
     window.history.back();
 })
+
+function goToSearchMenu(){
+    location.href = "./index.html";
+}
 
 // Utils
 function getUrlParameter(sParam) {

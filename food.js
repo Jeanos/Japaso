@@ -1429,7 +1429,7 @@ var food = {
             "description":"Simple, contemporary eatery with a menu specializing in Korean fried chicken, katsu & salad.",
             "price":20.95,
             "rate":3.8,
-            "image": "imgs/menuitems/Yang-Nyum-Chicken.jpg"
+            "image": "imgs/menuitems/Soy-Sal-Sal-Chicken.jpeg"
         },
         {
             "name":"Yang Nyum Chicken",
@@ -1448,7 +1448,7 @@ var food = {
             "description":"Simple, contemporary eatery with a menu specializing in Korean fried chicken, katsu & salad.",
             "price":21.95,
             "rate":3.8,
-            "image": ""
+            "image": "imgs/menuitems/Yang-Nyum-Chicken.jpg"
         },
         {
             "name":"Jujeh",

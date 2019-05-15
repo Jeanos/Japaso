@@ -5,8 +5,3 @@ document.querySelector("#selectedCategory").innerText = localStorage.getItem("Ca
 document.querySelector("#choosenImage").src = localStorage.getItem("SelectedItemImage");
 document.querySelector("#label").innerText = "You are in: " + localStorage.getItem("Category");
 
-
-function goToSearchMenu(){
-    location.href = "./index.html";
-}
-

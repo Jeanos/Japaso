@@ -164,13 +164,16 @@ function displayResearchFinalUI(value){
         "+ "<span class='nameDisplay'>"+ value[i].name+ "</span>" +  " <br/>Price: $"+value[i].price + " <br/>\
         "+ "<span class='restaurantDisplay'>"+ value[i].restaurants[0].name+ "</span>" + "\
         "+ "<span class='descriptionDisplay'>"+ value[i].description+ "</span>"+"\
-        "+"<p class='allLocations'>All Locations</p> <div class='restLocations'>"+value[i].restaurants[0].locations[0].City + "  \
-        "+value[i].restaurants[0].locations[1].City + "  \
-        "+value[i].restaurants[0].locations[2].City +"</div>" + "</div><div class='checkItemDiv'><button id='checkThisItem' onclick='checkThisProduct(this)'> Check Item</button></div></div></div><br/>";
+        "+"<p class='allLocations'>All Locations</p> <div class='restLocations'>"+getLocations(value[i].restaurants[0]) +"</div>" + 
+        "</div><div class='checkItemDiv'><button id='checkThisItem' onclick='checkThisProduct(this)'> Check Item</button></div></div></div><br/>";
     }
 
     myFunction();
     return false
+}
+
+function getLocations(restaurant) {
+    return restaurant.locations.map(x => x.City).join(",");
 }
 
 function checkThisProduct(el){
@@ -206,11 +209,6 @@ function CheckIfHomePage(){
     if (document.querySelector("#welcome").innerText == "Welcome"){
         pkg.catChoice = "home Page"
     }
-}
-
-
-function goToSearchMenu(){
-    location.href = "./index.html";
 }
 
 // functions that load when page is load

@@ -4,8 +4,3 @@ document.querySelector(".locations").innerText = localStorage.getItem("SelectedI
 document.querySelector(".description").innerText = localStorage.getItem("SelectedDescription");
 document.querySelector("#label").innerText = "You are in: " + pkg.catChoice;
 document.querySelector("#Comments").innerText = "What people say about " + localStorage.getItem("SelectedItemName");;
-
-
-function goToSearchMenu(){
-    location.href = "./index.html";
-}
