@@ -71,8 +71,9 @@ function filteredItems(){
     });
     pkg.itemFiltered = filtered;
     
-    if (pkg.itemFiltered = "") {
-        proxPkg.itemFiltered = "Item not found..";
+    if (pkg.itemFiltered == "") {
+        console.log("itemNotFound");
+        document.querySelector(".itemFound").innerText = "Items not in the Database";
     }
     proxPkg.itemFiltered = filtered;
 }
@@ -205,6 +206,11 @@ function CheckIfHomePage(){
     if (document.querySelector("#welcome").innerText == "Welcome"){
         pkg.catChoice = "home Page"
     }
+}
+
+
+function goToSearchMenu(){
+    location.href = "./index.html";
 }
 
 // functions that load when page is load

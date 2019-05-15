@@ -171,7 +171,7 @@ body {
 .flex-container {
     padding: 0;
     margin: 0;
-    margin-top: 120px;
+    margin-top: 55px;
     list-style: none;
     display: -webkit-box;
     display: -moz-box;
@@ -180,7 +180,7 @@ body {
     display: flex;
     flex-flow: column;
     justify-content: space-around;
-    height: 600px;
+    /* height: 600px; */
     width: 350px;
     line-height: 30px;
 }

@@ -5,3 +5,7 @@ document.querySelector(".description").innerText = localStorage.getItem("Selecte
 document.querySelector("#label").innerText = "You are in: " + pkg.catChoice;
 document.querySelector("#Comments").innerText = "What people say about " + localStorage.getItem("SelectedItemName");;
 
+
+function goToSearchMenu(){
+    location.href = "./index.html";
+}
