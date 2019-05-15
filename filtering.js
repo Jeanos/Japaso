@@ -66,7 +66,7 @@ function filteredItems() {
     var filtered = food[pkg.catChoice].filter(function (obj, i) {
         return (!pkg.minPrice || obj.price >= pkg.minPrice && obj.price <= pkg.maxPrice) &&
                (!pkg.minRate || obj.rate >= pkg.minRate && obj.rate <= pkg.maxRate) && 
-               (!pkg.itemLocation || obj.restaurants[0].locations.filter(l => l.City.indexOf(pkg.itemLocation) != -1));
+               (!pkg.itemLocation || obj.restaurants[0].locations.some(l => l.City.indexOf(pkg.itemLocation) != -1));
     });
     pkg.itemFiltered = filtered;
 
